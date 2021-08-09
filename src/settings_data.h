@@ -517,7 +517,7 @@ static const struct setting allowed_settings[] = {
                 .value = &settings.outer_frame_color,
                 .parser = NULL,
                 .parser_data = NULL,
-                .rule_offset = offsetof(struct rule, fc),
+                .rule_offset = offsetof(struct rule, ofc),
         },
 
         // other settings below
@@ -1097,7 +1097,7 @@ static const struct setting allowed_settings[] = {
                 .parser_data = NULL,
         },
         {
-                .name = "frame_color",
+                .name = "outer_frame_color",
                 .section = "urgency_low",
                 .description = "Outer frame color for notifications with low urgency",
                 .type = TYPE_STRING,
@@ -1167,7 +1167,7 @@ static const struct setting allowed_settings[] = {
                 .parser_data = NULL,
         },
         {
-                .name = "frame_color",
+                .name = "outer_frame_color",
                 .section = "urgency_normal",
                 .description = "Outer frame color for notifications with normal urgency",
                 .type = TYPE_STRING,
@@ -1237,7 +1237,7 @@ static const struct setting allowed_settings[] = {
                 .parser_data = NULL,
         },
         {
-                .name = "frame_color",
+                .name = "outer_frame_color",
                 .section = "urgency_critical",
                 .description = "Outer frame color for notifications with critical urgency",
                 .type = TYPE_STRING,

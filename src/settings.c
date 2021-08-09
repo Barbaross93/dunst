@@ -57,6 +57,7 @@ void print_rule(struct rule* r) {
         LOG_D("appname %s", r->appname);
         LOG_D("script %s", r->script);
         LOG_D("frame %s", r->fc);
+        LOG_D("outer_frame %s", r->ofc);
 }
 
 void check_and_correct_settings(struct settings *s) {

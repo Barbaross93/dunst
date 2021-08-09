@@ -56,7 +56,7 @@ void rule_apply(struct rule *r, struct notification *n)
         }
         if (r->ofc) {
                 g_free(n->colors.outer_frame);
-                n->colors.outer_frame = g_strdup(r->fc);
+                n->colors.outer_frame = g_strdup(r->ofc);
         }
         if (r->format)
                 n->format = r->format;
